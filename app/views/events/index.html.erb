@@ -1,0 +1,29 @@
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <% if current_user %>
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+  <% end %>
+</div>
+<div class="container">
+  <h1>Events</h1>
+
+  <% if notice %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= notice %>
+    </div>
+  <% end %>
+
+  <% if alert %>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <%= alert %>
+    </div>
+  <% end %>
+
+  <br/><br/>
+  <%= form_with url: events_path(name: 'Event A'), data: { turbo: false } do |f| %>
+      <%= f.submit 'Create Event A', class: 'btn btn-primary' %>
+  <% end %>
+  <br/><br/><br/>
+  <%= form_with url: events_path(name: 'Event B'), data: { turbo: false } do |f| %>
+      <%= f.submit 'Create Event B', class: 'btn btn-primary' %>
+  <% end %>
+</div>
