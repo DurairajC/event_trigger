@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1) Run 'bundle install'
+2) use 'Rails s' to start the server.
+3) navigate to http://localhost:3000
+4) click signup and create a user.
+5) Once signup is done, it will take you to the events page with buttons Event A and Event B.
+6) Replace "YOUR_ITERABLE_API_KEY" with your iterable API KEY to test event creation and send notifications.
+7) use command "Rspec spec" to run test cases.
